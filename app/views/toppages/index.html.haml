@@ -1,0 +1,10 @@
+.main
+  = image_tag (src = "https://www.pakutaso.com/shared/img/thumb/texture171030IMGL0767_TP_V.jpg")
+  .main__title
+    .effect-fade
+      交換日記へようこそ
+    %ul.main__title--btn
+      %li
+        = link_to "新規登録", "signup", class: "newbtn"
+        = link_to "ログイン", "login", class: "inbtn"
+        = link_to "使い方", "#", class: "howbtn"
