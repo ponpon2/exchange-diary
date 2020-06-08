@@ -1,0 +1,59 @@
+.profile{
+  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  &__title{
+  font-size: 100px;
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  color: #ffff;
+  }
+  &__info{
+    box-shadow: inset 0 10px 25px 0 rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    height: 300px;
+    line-height: 150px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #FFD5EC;
+    .name{
+      height: 100px;
+      li{
+        display: inline;
+        font-size: 30px;
+      }
+      &__text{
+        margin-right: 20px;
+      }
+      &__user{
+      }
+    }
+    .birth{
+      height: 100px;
+      li{
+        list-style: none;
+        display: inline;
+        font-size: 30px;
+       }
+      &__text{
+        margin-right: 20px;
+      }
+      &__user{
+      }
+    }
+  }
+  &__intro{
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    width: 600px;
+    font-size: 20px;
+    margin-top: 100px;
+  }
+}
