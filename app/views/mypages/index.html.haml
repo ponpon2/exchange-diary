@@ -1,8 +1,22 @@
 .mypage
-  = image_tag (src = "https://www.pakutaso.com/shared/img/thumb/texture171030IMGL0767_TP_V.jpg")
+  = image_tag (src = "")
   .mypage__title
     マイページ
-  .mypage__diaries
-    日記一覧
+  .mypage__topics
+    .sub-title
+      日記一覧
+    %ul.diaries
+      %li.diaries__diary
+        .diaries__diary--image
+        .diaries__diary--text
+          みかん
+      %li.diaries__diary
+        .diaries__diary--image
+        .diaries__diary--text
+          りんご
+      %li.diaries__diary
+        .diaries__diary--image
+        .diaries__diary--text
+          イチゴ
   .mypage__profile
     プロフィール
