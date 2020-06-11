@@ -1,22 +1,49 @@
 .mypage
   = image_tag (src = "")
   .mypage__title
-    マイページ
+    Mypage
   .mypage__topics
-    .sub-title
-      日記一覧
+    .heading.effect-fade
+      Diaries
     %ul.diaries
       %li.diaries__diary
         .diaries__diary--image
+          = link_to "/" do
+            = image_tag ("3282473_s.jpg")
         .diaries__diary--text
           みかん
       %li.diaries__diary
         .diaries__diary--image
+          = image_tag "3282473_s.jpg"
         .diaries__diary--text
           りんご
       %li.diaries__diary
         .diaries__diary--image
+          = image_tag "3282473_s.jpg"
         .diaries__diary--text
           イチゴ
   .mypage__profile
-    プロフィール
+    .heading.effect-fade
+      Profile
+    %ul.items
+      %li.items__note
+        Name
+        .item
+          花子 テスト
+      %li.items__note
+        BloodType
+        .item
+          A
+      %li.items__note
+        Sign
+        .item
+          双子
+      %li.item__note
+        Hobby
+        .item
+          料理
+      %li.item__name
+        Introduction
+        .item
+          初めまして。これはテスト文章です。これから沢山のことを学んでいきたいと思います。
+         
