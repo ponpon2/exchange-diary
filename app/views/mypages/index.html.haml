@@ -1,12 +1,12 @@
+
 .mypage
-  = image_tag (src = "")
   .mypage__title
     Mypage
   .mypage__topics
-    .heading.effect-fade
+   .heading.effect-fade
       Diaries
-    %ul.diaries
-      %li.diaries__diary
+    %ul.diaries.effect-fade
+      %li.diaries__diary  
         .diaries__diary--image
           = link_to "/" do
             = image_tag ("3282473_s.jpg")
@@ -31,6 +31,10 @@
         .item
           花子 テスト
       %li.items__note
+        Birthday
+        .item
+          1月1日
+      %li.items__note
         BloodType
         .item
           A
@@ -38,12 +42,3 @@
         Sign
         .item
           双子
-      %li.item__note
-        Hobby
-        .item
-          料理
-      %li.item__name
-        Introduction
-        .item
-          初めまして。これはテスト文章です。これから沢山のことを学んでいきたいと思います。
-         

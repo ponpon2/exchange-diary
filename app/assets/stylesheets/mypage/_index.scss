@@ -45,6 +45,7 @@
     }
   }
   &__profile{
+    margin-bottom: 100px;
     background-color: #DDFFFF;
     width: 1200px;
     position: absolute;
@@ -54,8 +55,12 @@
     .items{
       margin: 0 200px 10px;
       &__note{
+        display: inline-block;
+        margin-left: 50px;
+        font-family: fantasy;
         .item{
          display: inline;
+         margin-left: 20px;
         }
       }
     }
