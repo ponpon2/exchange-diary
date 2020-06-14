@@ -1,0 +1,43 @@
+
+.mypage
+  .mypage__title
+  .mypage__topics
+    .heading.effect-fade
+      Diaries
+    %ul.diaries.effect-fade
+      %li.diaries__diary  
+        .diaries__diary--image
+          = link_to "/" do
+            = image_tag ("3282473_s.jpg")
+        .diaries__diary--text
+          みかん
+      %li.diaries__diary
+        .diaries__diary--image
+          = image_tag "3282473_s.jpg"
+        .diaries__diary--text
+          りんご
+      %li.diaries__diary
+        .diaries__diary--image
+          = image_tag "3282473_s.jpg"
+        .diaries__diary--text
+          イチゴ
+  .mypage__profile
+    .heading.effect-fade
+      Profile
+    %ul.items
+      %li.items__note
+        Name
+        .item
+          花子 テスト
+      %li.items__note
+        Birthday
+        .item
+          1月1日
+      %li.items__note
+        BloodType
+        .item
+          A
+      %li.items__note
+        Sign
+        .item
+          双子

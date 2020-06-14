@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   } 
   
   root  "toppages#index"
+
+  resources :mypages, only: :index
   
   devise_scope :user do
     get "user/:id", :to => "users/registrations#detail"
