@@ -7,18 +7,20 @@
     %ul.diaries.effect-fade
       %li.diaries__diary  
         .diaries__diary--image
-          = link_to "/" do
+          = link_to "/diaries/new" do
             = image_tag ("3282473_s.jpg")
         .diaries__diary--text
           みかん
       %li.diaries__diary
         .diaries__diary--image
-          = image_tag "3282473_s.jpg"
+          = link_to "/diaries/new" do
+            = image_tag "3282473_s.jpg"
         .diaries__diary--text
           りんご
       %li.diaries__diary
         .diaries__diary--image
-          = image_tag "3282473_s.jpg"
+          = link_to "/diaries/new" do
+            = image_tag "3282473_s.jpg"
         .diaries__diary--text
           イチゴ
   .mypage__profile
