@@ -1,4 +1,4 @@
 class DiariesController < ApplicationController
-  def index
+  def new
   end
 end
