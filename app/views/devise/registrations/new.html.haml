@@ -1,0 +1,21 @@
+
+.user-info
+  .info-main
+    .info-main__title
+      新規登録
+    .info-main__contents
+      = form_with model: @user do |form|
+        .input
+          .input__email
+            = form.label :Email
+            %br
+            = form.email_field :email
+          .input__password
+            = form.label :Password
+            %br
+            = form.password_field :password, class:"contents-field__input", placeholder:"6文字以上の半角英数字"
+          .input__password-conf
+            = form.label :Password_confirmation
+            %br
+            = form.password_field :password_confirmation, class:"contents-field__input", placeholder:"6文字以上の半角英数字"
+        = form.submit "Sign up"

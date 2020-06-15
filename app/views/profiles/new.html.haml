@@ -1,0 +1,24 @@
+.profile
+  .profile-main
+    .profile-main__title
+      Profile情報入力してください。
+    .profile-main__contents
+      = form_with model: @user do |form|
+        .input
+          .input__name
+            = form.label :Name
+            %br
+            = form.text_field :name
+          .input__birth
+            = form.label :Birthday
+            %br
+            = form.date_select :birth, use_month_numbers: true,start_year: 1950, end_year: (Time.now.year - 10), default: Date.new(1990, 1, 1)
+          .input__blood
+            = form.label :Bloodtype
+            %br
+            = form.collection_select :blood_type_id, BloodType.all, :id, :name, {include_blank: "選択してください"}
+          .input__sign
+            = form.label :Sign
+            %br
+            = form.collection_select :sign_id, Sign.all, :id, :name, {include_blank: "選択してください"}
+        = form.submit
