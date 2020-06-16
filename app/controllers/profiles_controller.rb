@@ -1,10 +1,10 @@
 class ProfilesController < ApplicationController
   def new
-    @profiles = Profile.all
+    @profile = Profile.new
   end
 
   def create
-    @profile = Profile.new(profile_params)
+    @profile = Profile.create(profile_params)
     if @profile.save
         redirect_to mypages_path
     else

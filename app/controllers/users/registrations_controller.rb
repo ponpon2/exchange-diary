@@ -1,10 +1,10 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   def new
-    @users = User.all
+    @user = User.new
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.create(user_params)
     if @user.save
       flash[:notice] = "ユーザー登録が完了しました"
       redirect_to "/profils/new"
@@ -13,9 +13,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
     end
   end
 
-  protected
+  private
   def user_params
-    params.require(:user).permit(:email, :password, :Password_confirmation)
+    params.require(:user).permit(:email, :password)
   end
 
 end
+
