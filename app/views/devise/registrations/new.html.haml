@@ -4,7 +4,7 @@
     .info-main__title
       新規登録
     .info-main__contents
-      = form_with model: @user do |form|
+      = form_with url: user_registration_path do |form|
         .input
           .input__email
             = form.label :Email
