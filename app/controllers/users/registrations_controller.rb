@@ -9,7 +9,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       flash[:notice] = "ユーザー登録が完了しました"
       redirect_to "/profils/new"
     else
-      redirect_to "users/new"
+      render "new"
     end
   end
 
