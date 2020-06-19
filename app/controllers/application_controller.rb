@@ -15,10 +15,4 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: sign_up_params)
   end
 
-  protected
-
-  # loginしたらhome画面へリダイレクトし、indexアクションを実行する
-  def after_sign_in_path_for(resource)
-    index_home_path(resource)
-  end
 end
