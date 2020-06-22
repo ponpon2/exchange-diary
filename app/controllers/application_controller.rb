@@ -3,16 +3,16 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
   
+  # このアクションを追加
+  def after_sign_in_path_for(resource)
+    profiles_path
+  end
+
   protected
 
-  # methodをオーバーライドする。
+  # 入力フォームからアカウント名情報をDBに保存するために追加
   def configure_permitted_parameters
-    sign_up_params = [:username, :password, :password_confirmation]
-    sign_in_params = [:username, :password, :remember_me]
-    # account_update, sign_in, sign_up, のフィールドを再定義
-    devise_parameter_sanitizer.permit(:sign_up, keys: sign_up_params)
-    devise_parameter_sanitizer.permit(:sign_in, keys: sign_in_params)
-    devise_parameter_sanitizer.permit(:account_update, keys: sign_up_params)
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:emai])
   end
 
 end

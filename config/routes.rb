@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root  "toppages#index"
   devise_for :users
-  resources :users
-  
-  resources :mypages, only: :index
+  resources :users do
+    resources :mypages, only: :show
+  end
+  resources :profiles
   resources :diaries, only: :new
-  resources :profiles, only: :new
+  
 end

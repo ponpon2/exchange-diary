@@ -1,8 +1,13 @@
 class MypagesController < ApplicationController
 
   def index
-    @user = User.find(params[:id])
-    @profiles = Profile.where(user_id: @user.id)
+   @user = User.all
   end
+
+  def show
+    @user = User.find_by(id: current_user.id)
+    @profile = Profile.where(usr_id: @user.id)
+  end
+
 
 end

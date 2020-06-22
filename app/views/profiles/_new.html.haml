@@ -21,4 +21,4 @@
             = form.label :Sign
             %br
             = form.collection_select :sign_id, Sign.all, :id, :name, {include_blank: "選択してください"}
-        = form.submit
+        = form.submit 

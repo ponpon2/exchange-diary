@@ -1,19 +1,23 @@
 class ProfilesController < ApplicationController
+  def index
+    @profile = Profile.all
+  end
+
   def new
     @profile = Profile.new
   end
 
   def create
     @profile = Profile.create(profile_params)
-    if @profile.save
+      if @profile.save
         redirect_to mypages_path
-    else
+      else
         render 'new'
-    end
+      end
   end
 
   private
     def profile_params
-      params.require(:profile).permit(:name, :birth, :blood_type_id, :sign_id).merge(user_id: current_user.id)
+      params.permit(:name, :birth, :blood_type_id, :sign_id).merge(user_id: current_user.id)
     end
 end
