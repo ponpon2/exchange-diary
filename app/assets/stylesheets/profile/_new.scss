@@ -1,0 +1,38 @@
+.profile{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  position: fixed;
+  .profile-main{
+    width: 500px;
+    background-color: #ffdd;
+    font-family: fantasy;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    &__title{
+      font-size: 30px;
+      text-align: center;
+    }
+    &__contents{
+      text-align: center;
+      margin: 20px;
+      .input{
+        font-size: 20px;
+        &__name{
+          margin: 30px;
+        }
+        &__birht{
+          margin: 30px;
+        }
+        &__blood{
+          margin: 30px;
+        }
+        &__sign{
+          margin: 30px;
+        }
+      }
+    }
+  }
+}

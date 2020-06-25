@@ -1,4 +1,3 @@
-
 .mypage
   .mypage__topics
     .heading
@@ -6,18 +5,20 @@
     %ul.diaries.effect-fade
       %li.diaries__diary  
         .diaries__diary--image
-          = link_to "" do
+          = link_to "/diaries/new" do
             = image_tag ("3282473_s.jpg")
         .diaries__diary--text
           みかん
       %li.diaries__diary
         .diaries__diary--image
-          = image_tag "3282473_s.jpg"
+          = link_to "/diaries/new" do
+            = image_tag "3282473_s.jpg"
         .diaries__diary--text
           りんご
       %li.diaries__diary
         .diaries__diary--image
-          = image_tag "3282473_s.jpg"
+          = link_to "/diaries/new" do
+            = image_tag "3282473_s.jpg"
         .diaries__diary--text
           イチゴ
   .mypage__profile
@@ -27,16 +28,16 @@
       %li.items__note
         Name
         .item
-          花子 テスト
+          = @profil.name
       %li.items__note
         Birthday
         .item
-          1月1日
+          = @profil.birth
       %li.items__note
         BloodType
         .item
-          A
+          = @profil.blood_type.name
       %li.items__note
         Sign
         .item
-          双子
+          = @profil.sign.name

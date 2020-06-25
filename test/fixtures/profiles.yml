@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  bloodtype: MyString
+  brith: 1
+  day: 1
+
+two:
+  name: MyString
+  bloodtype: MyString
+  brith: 1
+  day: 1
