@@ -5,7 +5,7 @@ class MypagesController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: current_user.id)
+    @user = User.find[:id]
     @profile = Profile.where(usr_id: @user.id)
   end
 
