@@ -1,0 +1,23 @@
+.header{
+  width: 100%;
+  background-color: red;
+  &__upper{
+    list-style: none;
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    .headlogo{
+      &__img{
+        width: 150px;
+        height: 100px;
+      }
+    }
+    .logout{
+      line-height: 100px;
+      background-color: white;
+      height: 30px;
+      width: 100px;
+    }
+  }
+}
