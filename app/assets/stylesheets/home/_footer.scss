@@ -1,0 +1,23 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  &__inner{
+    height: 100px;
+    .footer-navi{
+      padding-top: 30px;
+      &__text{
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  &__wrapper{
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+}

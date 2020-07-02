@@ -1,4 +1,5 @@
-= render "share/header"
+.mypage-headder
+  = render "share/header"
 .mypage
   .mypage__topics
     .heading
@@ -42,3 +43,6 @@
         Sign
         .item
           = @profile.sign.name
+.mypage-footer
+  = render "share/footer"
+

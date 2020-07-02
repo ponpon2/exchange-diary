@@ -1,23 +1,26 @@
 .header{
   width: 100%;
-  background-color: red;
+  background-color: white;
+  border-bottom: 5px solid #ffdd;
   &__upper{
     list-style: none;
-    max-width: 1200px;
+    max-width: 1000px;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
     .headlogo{
       &__img{
-        width: 150px;
+        width: 100px;
         height: 100px;
       }
     }
     .logout{
-      line-height: 100px;
-      background-color: white;
+      background-color:white;
+      margin-top: 70px;
       height: 30px;
       width: 100px;
+      text-align: center;
+      font-family: fantasy;
     }
   }
 }
