@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
     profiles_path
   end
 
+  def after_sign_out_path_for(resource)
+    root_path 
+   end
+
   protected
 
   # 入力フォームからアカウント名情報をDBに保存するために追加

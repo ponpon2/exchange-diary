@@ -1,7 +1,8 @@
 .header{
+  position: fixed;
   width: 100%;
   background-color: white;
-  border-bottom: 5px solid #ffdd;
+  border-bottom: 2px solid black;
   &__upper{
     list-style: none;
     max-width: 1000px;
@@ -10,17 +11,27 @@
     justify-content: space-between;
     .headlogo{
       &__img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
       }
     }
-    .logout{
-      background-color:white;
-      margin-top: 70px;
-      height: 30px;
-      width: 100px;
+    .contents{
       text-align: center;
       font-family: fantasy;
+      line-height: 80px;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      &__logout-btn{
+        display: inline-block;  
+        background-color:white;
+        margin-right: 30px;
+      }
+      &__help-btn{
+        display: inline-block;
+        margin-left: 30px;
+      }
     }
   }
 }

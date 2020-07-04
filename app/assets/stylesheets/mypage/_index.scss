@@ -1,13 +1,12 @@
 .mypage{
-  overflow: scroll;
+  position: absolute;
   position: relative;
-  width: 100%;
-  height: 100%;
+  margin-bottom: 0;
   &__topics{
     width: 100%;
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 100px;
     transform: translateX(-50%);
     .diaries{
       margin: 0 auto;
@@ -15,7 +14,7 @@
       height: 200px;
       background-color:#ffff;
       list-style: none;
-      display: flex;
+      display: flex;;
       &__diary{
         height: 100%;
         width: 100%;
