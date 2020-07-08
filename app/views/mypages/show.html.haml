@@ -1,3 +1,5 @@
+.mypage-headder
+  = render "share/header"
 .mypage
   .mypage__topics
     .heading
@@ -28,16 +30,19 @@
       %li.items__note
         Name
         .item
-          = @profil.name
+          = @profile.name
       %li.items__note
         Birthday
         .item
-          = @profil.birth
+          = @profile.birth
       %li.items__note
         BloodType
         .item
-          = @profil.blood_type.name
+          = @profile.blood_type.name
       %li.items__note
         Sign
         .item
-          = @profil.sign.name
+          = @profile.sign.name
+.mypage-footer
+  = render "share/footer"
+

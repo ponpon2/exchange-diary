@@ -1,14 +1,12 @@
 .mypage{
-  overflow: scroll;
+  position: absolute;
   position: relative;
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  margin-bottom: 0;
   &__topics{
     width: 100%;
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 100px;
     transform: translateX(-50%);
     .diaries{
       margin: 0 auto;
@@ -16,7 +14,7 @@
       height: 200px;
       background-color:#ffff;
       list-style: none;
-      display: flex;
+      display: flex;;
       &__diary{
         height: 100%;
         width: 100%;
@@ -39,21 +37,24 @@
     }
   }
   &__profile{
-    margin-bottom: 100px;
+    margin: 0 auto;
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 450px;
     transform: translateX(-50%);
     .items{
-      margin: 10px auto;
+      text-align:  center; 
       &__note{
         display: inline-block;
         margin: 5px;
-        width: 150px;
+        width: 170px;
         font-family: fantasy;
+        font-size: 20px;
         .item{
          display: inline;
-         margin-left: 20px;
+         margin-left: 10px;
+         font-size: 15px;
         }
       }
     }
@@ -63,5 +64,5 @@
   text-align: center;
   font-size: 50px;
   margin: 20px auto;
-  font-family: fantasy;
+  font-family: fantasy; 
 }

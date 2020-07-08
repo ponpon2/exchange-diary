@@ -1,0 +1,29 @@
+.footer{
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  &__inner{
+    height: 70px;
+    .footer-navi{
+      padding-top: 20px;
+      &__text{
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  &__wrapper{
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 40px;
+  }
+}
