@@ -11,16 +11,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def create
     @user = User.create(configure_sign_up_params)
-    - if @user.save
+    if @user.save
       flash[:notice] = "ユーザー登録が完了しました"
       redirect_to "/profils/new"
-    - else
+    else
       render "new"
+    end
   end
 
   private
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:email])
   end
 
 end

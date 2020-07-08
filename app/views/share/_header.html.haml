@@ -5,6 +5,6 @@
         = image_tag "logo/logo.png", class: "headlogo__img"
     %ul.contents
       %li.contents__logout-btn
-        = link_to "log out", destroy_user_session_path 
+        = link_to "log out", sign_out_path 
       %li.contents__help-btn
-        = link_to "help", "#"  
+        = link_to "help", "#"
