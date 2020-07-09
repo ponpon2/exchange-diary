@@ -10,7 +10,7 @@ class ProfilesController < ApplicationController
   def create
     @profile = Profile.create(profile_params)
       if @profile.save
-        redirect_to mypage_path
+        redirect_to mypage_path(@profile.id)
       else
         render 'new'
       end
