@@ -8,11 +8,15 @@ class ApplicationController < ActionController::Base
     profiles_path 
   end
 
+  def after_sign_out_path_for(resource)
+    root_path 
+   end
+
   protected
 
   # 入力フォームからアカウント名情報をDBに保存するために追加
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:emai])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:email])
   end
 
 end

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
-  belongs_to :profile,optional: true
+         :recoverable, :rememberable, :trackable, :validatable
+  belongs_to :profile, optional: true
 end
