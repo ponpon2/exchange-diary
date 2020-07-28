@@ -1,43 +1,48 @@
-
+.mypage-headder
+  = render "share/header"
 .mypage
-  .mypage__title
   .mypage__topics
-    .heading.effect-fade
-      Diaries
+    .heading
+      Frends
     %ul.diaries.effect-fade
       %li.diaries__diary  
         .diaries__diary--image
-          = link_to "/" do
+          = link_to "/diaries/new" do
             = image_tag ("3282473_s.jpg")
         .diaries__diary--text
           みかん
       %li.diaries__diary
         .diaries__diary--image
-          = image_tag "3282473_s.jpg"
+          = link_to "/diaries/new" do
+            = image_tag "3282473_s.jpg"
         .diaries__diary--text
           りんご
       %li.diaries__diary
         .diaries__diary--image
-          = image_tag "3282473_s.jpg"
+          = link_to "/diaries/new" do
+            = image_tag "3282473_s.jpg"
         .diaries__diary--text
           イチゴ
   .mypage__profile
-    .heading.effect-fade
+    .heading
       Profile
-    %ul.items
+    %ul.items.effect-fade
       %li.items__note
         Name
         .item
-          花子 テスト
+          = @profile.name
       %li.items__note
         Birthday
         .item
-          1月1日
+          = @profile.birth
       %li.items__note
         BloodType
         .item
-          A
+          = @profile.blood_type.name
       %li.items__note
         Sign
         .item
-          双子
+          = @profile.sign.name
+.mypage-footer
+  = render "share/footer"
+

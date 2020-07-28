@@ -24,6 +24,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_hash (3.1.0)
+      activesupport (>= 5.0.0)
     activejob (5.2.4.3)
       activesupport (= 5.2.4.3)
       globalid (>= 0.3.6)
@@ -63,6 +65,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.9.1)
+      devise (>= 4.7.1)
+    devise-i18n-views (0.3.7)
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -226,10 +231,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_hash
   byebug
   cancancan
   coffee-rails (~> 4.2)
   devise
+  devise-i18n
+  devise-i18n-views
   font-awesome-rails
   haml-rails
   jbuilder (~> 2.5)
