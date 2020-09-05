@@ -1,37 +1,20 @@
 .header{
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  border-bottom: 2px solid black;
-  &__upper{
-    list-style: none;
-    max-width: 1000px;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
-    .headlogo{
-      &__img{
-        width: 80px;
-        height: 80px;
-      }
-    }
-    .contents{
-      text-align: center;
-      font-family: fantasy;
-      line-height: 80px;
-      a{
-        text-decoration: none;
-        color: black;
-      }
-      &__logout-btn{
-        display: inline-block;  
-        background-color:white;
-        margin-right: 30px;
-      }
-      &__help-btn{
-        display: inline-block;
-        margin-left: 30px;
-      }
+  display: flex;
+  height: 50px;
+  background-color: black;
+  color: #ffffff;
+  line-height: 50px;
+  &__title{
+    margin-left: 25px;
+    font-size: 22px;
+  }
+  &__contents{
+    margin: 0 35px 0 auto;
+    a{
+      margin-left: 35px;
+      text-decoration: none;
+      color: #ffffff;
     }
   }
+  
 }

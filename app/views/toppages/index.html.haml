@@ -1,10 +1,4 @@
-.main
-  = image_tag (src = "https://www.pakutaso.com/shared/img/thumb/031ELLY18420_TP_V.jpg")
-  .main__title
-    .effect-fade
-      Exchange Diary
-    %ul.main__title--btn
-      %li
-        = link_to "Sign up", "users/sign_up", class: "newbtn"
-        = link_to "Sign in", "users/sign_in", class: "inbtn"
-        = link_to "How to Use", "#", class: "howbtn"
+.wrapper
+  = render "share/header"
+  = render "toppage"
+  = render "share/footer"

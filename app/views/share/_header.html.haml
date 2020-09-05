@@ -1,10 +1,7 @@
 .header
-  %section.header__upper
-    .headlogo
-      = link_to root_path do
-        = image_tag "logo/logo.png", class: "headlogo__img"
-    %ul.contents
-      %li.contents__logout-btn
-        = link_to "log out", sign_out_path 
-      %li.contents__help-btn
-        = link_to "help", "#"
+  .header__title
+    Diario
+  %ul.header__contents
+    %li
+      = link_to "Sign up", "users/sign_up", class: "newbtn"
+      = link_to "Sign in", "users/sign_in", class: "inbtn"
