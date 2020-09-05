@@ -3,5 +3,8 @@
     Diario
   %ul.header__contents
     %li
-      = link_to "Sign up", "users/sign_up", class: "newbtn"
-      = link_to "Sign in", "users/sign_in", class: "inbtn"
+      - if user_signed_in?
+        = link_to "sign out", destroy_user_session_path, method: :delete
+      - else
+        = link_to "Sign up", new_user_registration_path, class: "newbtn"
+        = link_to "Sign in", new_user_session_path, class: "inbtn"
