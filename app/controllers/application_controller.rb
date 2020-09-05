@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   
   # このアクションを追加
   def after_sign_in_path_for(resource)
-    profiles_path 
+    root_path
   end
 
   def after_sign_out_path_for(resource)
