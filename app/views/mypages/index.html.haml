@@ -7,7 +7,7 @@
     %ul.diaries.effect-fade
       %li.diaries__diary  
         .diaries__diary--image
-        - if @diaries.myself_id.present?
+        - if @mypage_diaries.present?
           = link_to "#" do
             .sample
               .sample__name
