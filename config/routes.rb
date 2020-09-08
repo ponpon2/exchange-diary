@@ -3,8 +3,16 @@ Rails.application.routes.draw do
   
   root "toppages#index"
 
-  resource :mypages, only: [:show] do
-    resources :diaries, except: [:index]
+  resources :mypages, only: [:index] do
+    collection do
+      delete 'logout' 
+    end
   end
+
+  namespace :mypages do
+    get 'diaries/myself', to: 'diaries#index'
+  end
+
+  resources :diaries
 
 end

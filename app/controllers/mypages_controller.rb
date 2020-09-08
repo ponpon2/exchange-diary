@@ -1,7 +1,5 @@
 class MypagesController < ApplicationController
-
-
-  def show
+  def index
     
   end
 

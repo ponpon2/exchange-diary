@@ -1,5 +1,8 @@
 class DiariesController < ApplicationController
+  before_action :set_diary
+
   def new
+    @diary = Diary.new
   end
 
   def create
@@ -9,5 +12,11 @@ class DiariesController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def set_diary
+    @diaries = Diary.find(params[:id])
   end
 end
