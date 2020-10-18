@@ -1,0 +1,18 @@
+.mypage-headder
+  = render "share/header"
+.mypage
+  .mypage__topics
+    .heading
+      Diaries
+    %ul.diaries.effect-fade
+      %li.diaries__diary  
+        .diaries__diary--image
+        - if @mypage_diaries.present?
+          - @mypage_diaries.each do |diary_exhibition|
+            = link_to "#" do
+              .sample
+                .sample__name
+                  yui
+.mypage-footer
+  = render "share/footer"
+

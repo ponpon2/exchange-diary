@@ -3,6 +3,7 @@
     diary
   .text
     .text__day
-      2020/2/13
+      = Date.current.strftime('%Y年 %m月 %d日 (%a)')
     .text__article
-      これはテストです
+      = fields_for :images do |i|
+        = i.file_field :src
