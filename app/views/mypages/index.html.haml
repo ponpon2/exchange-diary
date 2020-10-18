@@ -8,10 +8,11 @@
       %li.diaries__diary  
         .diaries__diary--image
         - if @mypage_diaries.present?
-          = link_to "#" do
-            .sample
-              .sample__name
-                yui
+          - @mypage_diaries.each do |diary_exhibition|
+            = link_to "#" do
+              .sample
+                .sample__name
+                  yui
 .mypage-footer
   = render "share/footer"
 
